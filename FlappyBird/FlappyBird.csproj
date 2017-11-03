@@ -74,6 +74,26 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindow.Pipes.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.IO.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.Ground.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindow.Score.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -104,10 +124,28 @@
     <Resource Include="bird.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="pipe.jpg" />
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="pipe2.jpg" />
+    <Resource Include="pipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pipeTip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="skyline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="score.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="best.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="restartButton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
