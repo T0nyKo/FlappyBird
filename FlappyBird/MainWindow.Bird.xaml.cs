@@ -136,8 +136,13 @@ namespace FlappyBird
         // Returns true when bird has collided with the ground of any of the pipes.
         private bool detectCollision()
         {
+            // Return if bird has collided already. 
+            if (birdCollision)
+            {
+                return true;
+            }
             // Checks that the bird has not made contact with the ground.
-            if (BirdBottomCoordinate > CanvasHeight - GroundHeight)
+            else if (BirdBottomCoordinate > CanvasHeight - GroundHeight)
             {
                 return stopGroundScroll();
             }
